@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+{% load static %}
+{% block body %}
+   <div class="main">
+       <H1 style="text-align: center; padding: 3vw; color:whitesmoke; font-size: 3rem;">SKILLS</H1>
+    <div class="about">
+        <div class="skill-items">
+            <img class="skill-img" width="200" height="200" src="{% static '1.png' %}" alt="HTML">
+            <figcaption>HTML</figcaption>
+        </div>
+        <div class="skill-items">
+            <img class="skill-img" width="200" height="200" src="{% static '2.png' %}" alt="CSS">
+            <figcaption>CSS</figcaption>
+        </div>
+        <div class="skill-items">
+            <img class="skill-img" width="200" height="200" src="{% static '3.png' %}" alt="JAVASCRIPT">
+            <figcaption>JAVASCRIPT</figcaption>
+        </div>
+        <div class="skill-items">
+            <img class="skill-img" width="200" height="200" src="{% static '4.jpg' %}" alt="DJANGO">
+            <figcaption>DJANGO</figcaption>
+        </div>
+        <div class="skill-items">
+            <img class="skill-img" width="200" height="200" src="{% static '5.png' %}" alt="MY SQL">
+            <figcaption>MY SQL</figcaption>
+        </div>
+        <div class="skill-items">
+            <img class="skill-img" width="200" height="200" src="{% static '6.png' %}" alt="DB.SQLITE">
+            <figcaption>REACT JS</figcaption>
+        </div>
+    </div>
+   </div>
+{% endblock body %}

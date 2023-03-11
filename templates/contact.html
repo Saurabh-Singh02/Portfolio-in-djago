@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Contact{% endblock title %}
+{% block body %}
+{% if messages %}
+{% for message in messages  %}
+<div style="padding: 5px; background-color: #88f488;" class="flexbox message {{message.tags}}"><p>{{ message }}</p></div>
+{% endfor %}
+{% endif %}
+<form method="post" action="/contact">
+    {% csrf_token %}
+    <div class="flexbox main">
+        <div class="contact flexbox">
+            <input type="text" name="name" placeholder="Enter your name" />
+            <input type="email" name="email" placeholder="Enter your e-mail" />
+                <input type="text" name="phone" placeholder="Enter your phone number" />
+                <textarea type="text" name="desc" placeholder="Reason for contact"></textarea>
+                <input id="btn1" name="submitbtn" type="submit" Value="Submit" />
+            </div>
+        </div>
+    </form>
+{% endblock body %}
