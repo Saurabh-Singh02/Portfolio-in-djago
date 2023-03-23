@@ -5,8 +5,8 @@
 }
 
 :root {
-    --MAINCOLOR: #0098df;
-    --HEAD_FOOT_COLOR: #a4e2ff;
+    --MAINCOLOR: #0fb2c4;
+    --HEAD_FOOT_COLOR: #ffffff;
 }
 
 .flexbox {
@@ -78,12 +78,19 @@
     gap: 5vw;
 }
 
+#skill-heading {
+    color: var(--MAINCOLOR);
+    text-align: center;
+    padding: 3vw;
+    font-size: 3rem;
+}
+
 .skill-items {
     border-radius: 5px;
     text-align: center;
     padding: 3vw;
     border: 2px solid var(--MAINCOLOR);
-    background-color: #1a1a1a;
+    background-color: #000;
     color: whitesmoke;
 }
 
@@ -105,7 +112,7 @@
 
 .contact {
     border: 1px solid var(--MAINCOLOR);
-    width: 35vw;
+    width: 65vh;
     height: 50vh;
     flex-direction: column;
     border-radius: 5px;
@@ -114,12 +121,14 @@
 
 .contact input,
 .contact textarea {
+    background-color: black;
     width: 80%;
     margin: 5px;
-    padding: 7px;
+    padding: 8px;
     outline: 1px solid var(--MAINCOLOR);
     border: none;
     color: var(--MAINCOLOR);
+    border-radius: 2px;
     resize: vertical;
 }
 
