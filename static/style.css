@@ -109,10 +109,17 @@
     color: var(--MAINCOLOR);
     margin: 1vw;
 }
+.contact-banner{
+    width: 100%;
+}
+.contact-banner img{
+    width: 99vw;
+    height: auto;
+}
 
 .contact {
     border: 1px solid var(--MAINCOLOR);
-    width: 65vh;
+    width: 70vw;
     height: 50vh;
     flex-direction: column;
     border-radius: 5px;
@@ -123,7 +130,7 @@
 .contact textarea {
     background-color: black;
     width: 80%;
-    margin: 5px;
+    margin: 8px;
     padding: 8px;
     outline: 1px solid var(--MAINCOLOR);
     border: none;
@@ -131,6 +138,7 @@
     border-radius: 2px;
     resize: vertical;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -141,6 +149,11 @@ html {
     color: whitesmoke;
     background-color: var(--MAINCOLOR);
     outline: none;
+}
+
+#btn1:hover{
+    background-color: #05cce2;
+    box-shadow: 0 0 1px 1px white;
 }
 
 .footer {

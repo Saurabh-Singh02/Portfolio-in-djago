@@ -23,5 +23,5 @@ def contact(request):
         contact = Contact(name=name, email=email, phone=phone,
                           desc=desc, date=datetime.today())
         contact.save()
-        messages.success(request, "Your message has been sent")
+        messages.success(request, "Your message has been sent.")
     return render(request, 'contact.html')

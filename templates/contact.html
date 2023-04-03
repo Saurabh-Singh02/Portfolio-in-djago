@@ -3,9 +3,26 @@
 {% block body %}
 {% if messages %}
 {% for message in messages  %}
-<div style="padding: 5px; background-color: #dfd;" class="flexbox message {{message.tags}}">&#9989;&nbsp;<p>{{ message }}</p></div>
+<div id="message" style="padding: 5px; background-color: #dfd;" class="flexbox message {{message.tags}}">
+    &#9989;&nbsp;
+    <p>{{ message }}</p>
+    &nbsp;&nbsp;
+    <button style="background: transparent;" onclick="Hidemsg();">&#10006;</button>
+</div>
+<script>
+    function Hidemsg(){
+        let message = document.getElementById("message");
+        if(message.style.display = "block"){
+            message.style.display = "none";
+        }
+    }
+</script>
 {% endfor %}
 {% endif %}
+{% load static %}
+<div class="contact-banner">
+    <img src="{% static '1680511883989.jpeg' %}" alt="Contact-Banner">
+</div>
 <form method="post" action="/contact">
     {% csrf_token %}
     <div class="flexbox main">
